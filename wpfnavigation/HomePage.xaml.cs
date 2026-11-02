@@ -22,5 +22,10 @@ namespace wpfnavigation
         {
             InitializeComponent();
         }
+
+        private void GoToProfile_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new ProfilePage());
+        }
     }
 }

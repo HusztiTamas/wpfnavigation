@@ -5,8 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:wpfnavigation"
         mc:Ignorable="d"
+        Background="#F8FAFC"
         Title="InfoWindow" Height="450" Width="800">
-    <Grid>
-        
+    <Grid Margin="40">
+        <StackPanel>
+            <TextBlock Text="Külön Window" FontSize="32"
+                       FontWeight="Bold" Foreground="#1E293B" HorizontalAlignment="Center"/>
+            <TextBlock Text="Ez az ablak nem Page, hanem önálló Window." FontSize="16"
+                       Foreground="#64748B"  Margin="0,10,0,25" HorizontalAlignment="Center"/>
+            <TextBlock Text="Írd be a neved:"
+                       FontWeight="Bold"/>
+            <TextBox x:Name="txtName" Height="40" FontSize="16" Padding="8"
+                     Margin="0,5,0,15"/>
+            <Button Content="Köszönés"
+                    Height="45" Margin="0,0,0,10" Click="Koszones_Click"/>
+            <Button Content="Ablak bezárása" Height="45" Click="Close_Click"/>
+        </StackPanel>
     </Grid>
 </Window>

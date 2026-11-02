@@ -19,6 +19,7 @@ namespace wpfnavigation
         public MainWindow()
         {
             InitializeComponent();
+            mainFrame.Navigate(new HomePage());
         }
 
         private void Home_Click(object sender, RoutedEventArgs e)

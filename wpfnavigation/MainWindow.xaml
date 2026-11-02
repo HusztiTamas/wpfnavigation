@@ -26,6 +26,7 @@
                         Height="45" Margin="0,0,0,10" Click="OpenWindow_Click"/>
                 <Button Content="Modális - ShowDialog()"
                         Height="45" Click="OpenDialog_Click"/>
+                
             </StackPanel>            
         </Border>
         

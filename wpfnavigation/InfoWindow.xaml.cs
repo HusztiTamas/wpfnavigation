@@ -21,5 +21,15 @@ namespace wpfnavigation
         {
             InitializeComponent();
         }
+
+        private void Close_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
+
+        private void Koszones_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Köszönöm, hogy használod az alkalmazást!", "Köszönöm", MessageBoxButton.OK, MessageBoxImage.Information);
+        }
     }
 }
